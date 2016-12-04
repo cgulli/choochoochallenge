@@ -19,6 +19,11 @@ describe Graph do
     it 'adds an edge' do
       expect(graph).to respond_to(:add_edge).with(3).arguments
     end
+  end
 
+  describe '#manages nodes' do
+    it 'finds nodes by name' do
+      expect(graph).to respond_to(:find_node).with(name)
+    end
   end
 end
