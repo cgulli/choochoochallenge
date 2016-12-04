@@ -13,6 +13,7 @@ class Graph
     from = nodes.index { |v| v.name == start}
     to   = nodes.index { |v| v.name == terminus }
     nodes[from].connections[to] = true
+    nodes[from].weights[to] = weight if weight
   end
 
 end
