@@ -1,7 +1,6 @@
 require 'node'
 
 describe Node do
-
   @node = Node.new
   it 'has a name' do
     @node = "station"
