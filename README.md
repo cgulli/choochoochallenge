@@ -1,4 +1,4 @@
-#ThoughtWorks Tech Test Challenge, Problem One: Trains
+#Tech Test Challenge, Problem One: Trains
 ##Caitlin Gulliford, 05/12/16
 
 ###Challenge Instructions

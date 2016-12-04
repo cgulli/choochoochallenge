@@ -5,5 +5,4 @@ attr_reader :name, :connections
     @name = name
     @connections = []
   end
-
 end
