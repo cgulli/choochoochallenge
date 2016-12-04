@@ -11,10 +11,13 @@ describe Graph do
     end
   end
 
-  describe '#stores nodes' do
+  describe '#creates routes' do
     graph = Graph.new
     it 'adds nodes to array' do
       expect(graph).to respond_to(:add_node).with(1).argument
+    end
+    it 'adds an edge' do
+      expect(graph).to respond_to(:add_edge).with(3).arguments
     end
 
   end
