@@ -1,8 +1,9 @@
 class Node
-attr_reader :name, :connections
+attr_accessor :name, :connections, :weights
 
   def initialize(name)
     @name = name
     @connections = []
+    @weights = []
   end
 end
