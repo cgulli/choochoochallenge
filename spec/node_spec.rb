@@ -9,5 +9,8 @@ describe Node do
     it 'initially has no connections' do
       expect(node.connections).to be_empty
     end
+    it 'has no weights' do
+      expect(node.weights).to be_empty
+    end
   end
 end
