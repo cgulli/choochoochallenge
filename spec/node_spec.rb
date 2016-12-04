@@ -2,10 +2,9 @@ require 'node'
 
 describe Node do
   describe '#initialize' do
-    @node = Node.new
     it 'has a name' do
-      @node = "station"
-      expect(@node).to eq "station"
+      node = Node.new('station')
+      expect(node.name).to eq 'station'
     end
   end
 end
