@@ -10,10 +10,16 @@ class Graph
   end
 
   def add_edge(start, terminus, weight)
-    from = nodes.index { |v| v.name == start}
-    to   = nodes.index { |v| v.name == terminus }
+    from = nodes.index { |n| n.name == start}
+    to   = nodes.index { |n| n.name == terminus }
     nodes[from].connections[to] = true
     nodes[from].weights[to] = weight if weight
+  end
+
+  def find_node(name)
+    nodes.each do |node|
+      return node if node.name == name
+    end
   end
 
 end

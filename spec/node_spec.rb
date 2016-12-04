@@ -1,7 +1,7 @@
 require 'node'
 
 describe Node do
-  describe '#initialize' do
+  context '#initialize' do
     node = Node.new('station')
     it 'has a name' do
       expect(node.name).to eq 'station'

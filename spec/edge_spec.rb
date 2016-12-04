@@ -1,7 +1,7 @@
 require 'edge'
 
 describe Edge do
-  describe '#initialize' do
+  context '#initialize' do
     edge = Edge.new('A','B', 5)
     it 'has a start node' do
       expect(edge.start).to eq 'A'
