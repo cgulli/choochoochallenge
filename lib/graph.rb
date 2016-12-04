@@ -20,6 +20,11 @@ class Graph
     nodes.each do |node|
       return node if node.name == name
     end
+    nil
+  end
+
+  def node_count
+    nodes.length
   end
 
 end
