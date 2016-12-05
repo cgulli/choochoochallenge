@@ -5,7 +5,7 @@ class Graph
     @nodes = []
   end
 
-  def add_node(name)
+  def create_node(name)
     @nodes << Node.new(name)
   end
 
